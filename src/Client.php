@@ -119,6 +119,11 @@ class Client
             throw new Exception($message, $code, var_export($opts, true), $result);
         }
 
+        return $this->decode($result);
+    }
+
+    protected function decode($result)
+    {
         return json_decode($result, false, 512, JSON_THROW_ON_ERROR);
     }
 
