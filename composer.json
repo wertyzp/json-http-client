@@ -1,6 +1,7 @@
 {
   "name": "wertyzp/json-http-client",
   "description": "Json Http Client",
+  "license": ["MIT"],
   "minimum-stability": "dev",
   "config": {
     "preferred-install": "dist",
